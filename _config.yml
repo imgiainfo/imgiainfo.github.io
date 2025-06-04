@@ -2,44 +2,26 @@ url: https://imgiainfo.com
 baseurl: ""
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: (img) Imgage - (ia) Intelligence artificielle - (info) Information
+email: info@imgiainfo.com
+description: "Artiste et codeur passionné, j'explore et développe des projets mêlant intelligence artificielle, art visuel et informatique.
+
+Je propose une gamme de services personnalisés, allant de la création de sites web à la mise en place de CRM, en passant par la gestion de systèmes et le développement de logiciels. Mon expertise s'étend également à la création artistique, incluant illustrations, petites animations et graphisme, pour donner vie à des idées uniques et innovantes.
+
+Chaque projet est une occasion de fusionner esthétique et performance, afin d’offrir des solutions à la fois fonctionnelles et inspirantes. Bienvenue dans mon univers où technologie et imagination s'entrelacent pour façonner des expériences uniques."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Philippe Depadova-Berube
   pic: 1
-  position: Lead Designer
+  position: Designer, Artiste, Technicien Informatique 
   social:
-    - title: twitter
+    - title: Instagram
       url: #
-    - title: facebook
+    - title: Linkedin
       url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
+    - title: Patreon
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -57,8 +39,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Quebec
+  - line: Montreal
 
 # Build settings
 markdown: kramdown
