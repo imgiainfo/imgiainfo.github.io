@@ -1,15 +1,13 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Website
+subtitle: E-commerce/Business/Personal
 layout: default
 modal-id: 1
-date: 2014-07-18
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+Price: 50$/h *CAD or on demand
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: Website for E-commerce include analytics and strategy. For Businesses and personnal websites contact me through the form bellow. 
 
 ---
