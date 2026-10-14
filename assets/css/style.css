@@ -125,7 +125,7 @@ h3{font-size:20px;margin:32px 0 6px}
 .faq dd{margin:8px 0 0;color:var(--texte)}
 
 /* ---------- contact ---------- */
-.coordonnees{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:34px}
+.coordonnees{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:34px;margin-top:34px}
 .coordonnees b{display:block;font-size:15px;text-transform:uppercase;letter-spacing:.12em;
                color:var(--gris);margin-bottom:8px}
 .coordonnees a{color:var(--encre);text-decoration:none;border-bottom:2px solid var(--bleu);font-size:19px}

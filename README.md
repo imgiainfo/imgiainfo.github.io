@@ -8,7 +8,7 @@ Publié par GitHub Pages depuis la branche `gh-pages` (le workflow
 
 ## Structure
 
-    _config.yml              titre, description, courriel, téléphone, ville (une seule source)
+    _config.yml              titre, description, courriel, ville (une seule source)
     _layouts/default.html    la coquille : entete + contenu + pied
     _includes/head.html      metadonnees, favicon, feuille de style
     _includes/nav.html       la navigation (et la bande tricolore)
