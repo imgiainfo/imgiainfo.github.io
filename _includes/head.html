@@ -19,6 +19,9 @@
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<!-- la version change a chaque deploiement : aucun navigateur ne peut garder
-     une vieille feuille de style et afficher une page a moitie mise a jour -->
-<link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
+<!-- La feuille de style est ecrite DANS la page (voir _includes/feuille.css).
+     Il n'y a donc plus de fichier separe a mettre en cache : une page ne peut
+     plus arriver avec une vieille mise en forme, et vice versa. -->
+<style>
+{% include feuille.css %}
+</style>
