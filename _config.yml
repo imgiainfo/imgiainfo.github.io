@@ -1,25 +1,12 @@
-url: https://imgiainfo.com
-baseurl: ""
-
-# Site settings
 title: IMGIAINFO inc.
+url: https://imgiainfo.com
+lang: fr
 email: phildb@imgiainfo.com
-description: "Plateformes sur mesure : image, IA, information. IMGIAINFO inc. construit des systemes qui doivent tenir des dossiers qui passent un audit : integrite des donnees ALCOA++, IA de confiance, cloud souverain. Quebec, Canada."
+phone: 438 397 0197
+tel: "+14383970197"
+ville: Québec, Canada
+president: Philippe Depadova-Bérubé
+description: "Plateformes sur mesure : image, IA, information. Applications, intégrité des données ALCOA++, IA de confiance et cloud souverain. IMGIAINFO inc., Québec, Canada."
 
-# Team names, titles and social links
-people:
-- name: Philippe Depadova-Berube
-  pic: 1
-  position: President
-  social:
-    - title: Courriel
-      url: mailto:phildb@imgiainfo.com
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: Quebec
-  - line: Canada
-
-# Build settings
 markdown: kramdown
 permalink: pretty

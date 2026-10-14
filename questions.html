@@ -1,0 +1,100 @@
+---
+layout: default
+title: "Questions fréquentes"
+description: "Les questions qu'on nous pose : ALCOA++, LLM dans la boucle, audits FDA et Santé Canada, comptes partagés, matériel, identité des machines, chaîne de hachage."
+permalink: /questions/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Questions fréquentes</p>
+    <h1>Ce qu'un visiteur<br><em>veut savoir</em></h1>
+    <p class="chapeau">Les réponses courtes. Si la vôtre n'y est pas, elle nous intéresse —
+    <a href="/contact/">écrivez-nous</a>.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap lecture">
+    <dl class="faq">
+
+      <dt>Vous faites quoi, exactement ?</dt>
+      <dd>Des plateformes sur mesure. Nous prenons un procédé qui vit sur papier ou dans un tableur
+      et nous le transformons en un système qui fait le travail pour de vrai, avec la trace qui va
+      avec. Une seule équipe, du poste de travail jusqu'au serveur.</dd>
+
+      <dt>C'est quoi ALCOA++ ?</dt>
+      <dd>La règle qui gouverne tout ce que nous livrons : les neuf attributs de l'intégrité des
+      données — attribuable, lisible, contemporain, original, exact, complet, cohérent, durable,
+      disponible — plus deux choses que nous mettons sur chaque ligne : l'identité de la machine, et
+      la vérification de la chaîne. Le sigle s'écrit avec deux signes plus, dans tous nos documents.
+      <a href="/alcoa/">La page complète est ici.</a></dd>
+
+      <dt>Comment intégrez-vous un LLM sans briser ALCOA++ ?</dt>
+      <dd>Le modèle ne crée rien et ne signe rien. Les actions sont écrites et validées d'avance par
+      des humains ; le modèle construit des patterns à partir de ces blocs déjà préparés, il choisit
+      et il ordonne. Rien n'entre dans un enregistrement sans la validation d'une personne nommée, et
+      cette validation est elle-même une entrée de la piste.
+      <a href="/ia-de-confiance/">Le détail est ici.</a></dd>
+
+      <dt>Est-ce que ça passe un audit ?</dt>
+      <dd>On répond par la trace, pas par la promesse. Quatre juridictions nous intéressent :
+      la FDA (21 CFR Part 11, des exigences fonctionnelles), la Chine (NMPA, des moyens de gestion
+      <em>et</em> des moyens techniques), le Japon (PIC/S PI 041-1 et ses neuf attributs) et Santé
+      Canada. Les quatre sont technologiquement neutres : elles fixent ce que l'enregistrement doit
+      dire, pas la marque de l'outil.</dd>
+
+      <dt>Faut-il du matériel sur une liste approuvée ?</dt>
+      <dd>Non — aucune des quatre juridictions n'a de liste de matériel approuvé. Ce qui existe, ce
+      sont des listes de <em>modules cryptographiques certifiés</em> (FIPS 140-3 du NIST et du
+      Canada, Common Criteria) que certains services qualité aiment citer. Le vrai sujet n'est pas la
+      liste : c'est le fond. Une puce de l'ère SHA-1 est indéfendable, parce que le SHA-1 a été
+      retiré des algorithmes approuvés pour les signatures.</dd>
+
+      <dt>Comment savez-vous qui a écrit quoi ?</dt>
+      <dd>Par des comptes nommés, un par employé. Un compte partagé qui crée ou modifie une donnée
+      de lot ne permet pas de remonter à la personne qui a agi — c'est écrit noir sur blanc dans
+      PIC/S PI 041-1 et dans l'annexe 5 du TRS 996 de l'OMS. Le rôle d'administrateur reste : il est
+      simplement porté par des personnes.</dd>
+
+      <dt>Et si trois opérateurs se relaient sur le même poste de travail ?</dt>
+      <dd>C'est le même problème, un cran plus bas — et les textes visent aussi les environnements
+      réseau. C'est là que les deux identités se séparent : la <strong>personne</strong> est un
+      compte nommé, la <strong>machine</strong> est une clé. L'enregistrement nomme les deux.</dd>
+
+      <dt>Comment la machine est-elle identifiée ?</dt>
+      <dd>Au premier contact, sa clé est épinglée, et c'est cette clé qui signe ensuite les actions.
+      L'identité de la machine devient un fait, pas une déclaration — sans liste de machines
+      approuvées à tenir à jour.</dd>
+
+      <dt>Une chaîne de hachage, ça suffit ?</dt>
+      <dd>Non, et nous le disons nous-mêmes : elle <strong>détecte</strong> une modification, elle ne
+      la <strong>prouve</strong> pas. Quiconque peut écrire le fichier peut recalculer la chaîne.
+      Pour de la non-répudiation, il faut une signature qui exige un secret. Nous l'ajoutons là où
+      l'enjeu le justifie, et nous ne vendons pas une chaîne comme une preuve.</dd>
+
+      <dt>Est-ce que le modèle peut se tromper ?</dt>
+      <dd>Oui, et le système est construit pour ça. Une proposition fausse est une proposition
+      fausse : elle n'entre pas dans le dossier tant qu'un humain ne l'a pas validée, et la piste
+      garde la proposition comme la décision.</dd>
+
+      <dt>Où tournent vos modèles ?</dt>
+      <dd>Là où vos règles l'exigent : sur votre matériel, dans votre réseau, ou chez un fournisseur
+      que vous choisissez. Aucune dépendance à un service que vous ne contrôlez pas.</dd>
+
+      <dt>Est-ce que vous reprenez un système existant ?</dt>
+      <dd>Oui. Nous partons de ce qui tourne déjà — une application, un procédé papier, un ensemble
+      de fichiers — et nous ajoutons ce qui manque : la structure, la traçabilité, les garde-fous,
+      la validation. Le remplacement complet est possible, mais ce n'est pas le point de départ.</dd>
+
+      <dt>Vous travaillez en quelle langue ?</dt>
+      <dd>En français, et les documents destinés à l'étranger peuvent être livrés en anglais.</dd>
+
+      <dt>Comment vous joindre ?</dt>
+      <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a> ·
+      <a href="tel:{{ site.tel }}">{{ site.phone }}</a> — {{ site.president }},
+      {{ site.ville }}.</dd>
+
+    </dl>
+  </div>
+</section>

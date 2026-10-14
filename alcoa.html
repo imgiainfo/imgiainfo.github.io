@@ -1,0 +1,115 @@
+---
+layout: default
+title: "C'est quoi ALCOA++"
+description: "ALCOA++ : les neuf attributs de l'intégrité des données, ce que porte chaque entrée d'audit, et ce que les quatre juridictions exigent vraiment. IMGIAINFO inc."
+permalink: /alcoa/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Intégrité des données</p>
+    <h1>C'est quoi<br><em>ALCOA++</em></h1>
+    <p class="chapeau">C'est la règle d'intégrité des données qui gouverne tout ce que nous livrons.
+    Elle vient de la norme <strong>ALCOA+</strong> — les neuf attributs attendus d'un enregistrement
+    en environnement réglementé — que nous écrivons et appliquons avec deux signes plus, comme sur
+    tous nos documents.</p>
+  </div>
+</div>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Les neuf attributs</p>
+    <h2>Un enregistrement doit pouvoir répondre seul</h2>
+    <div class="attributs">
+      <div><b>Attribuable</b><span>On sait qui a écrit, et depuis quelle machine.</span></div>
+      <div><b>Lisible</b><span>La donnée reste lisible pendant toute sa durée de vie.</span></div>
+      <div><b>Contemporain</b><span>Écrit au moment où l'action a lieu, jamais après coup.</span></div>
+      <div><b>Original</b><span>La donnée d'origine — pas une copie retapée plus tard.</span></div>
+      <div><b>Exact</b><span>La valeur réelle, sans retouche.</span></div>
+      <div><b>Complet</b><span>Y compris ce qui a échoué, a été refusé ou annulé.</span></div>
+      <div><b>Cohérent</b><span>Les mêmes règles partout, dans l'ordre des événements.</span></div>
+      <div><b>Durable</b><span>La trace survit à la machine, au logiciel et aux années.</span></div>
+      <div><b>Disponible</b><span>Consultable et exportable à la demande d'un inspecteur.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">La trace</p>
+    <h2>Ce que porte chaque entrée</h2>
+    <div class="champs">
+      <div><b>Qui</b> un utilisateur nommé, jamais un compte partagé</div>
+      <div><b>D'où</b> la machine identifiée par sa clé</div>
+      <div><b>Quoi</b> l'action posée</div>
+      <div><b>Avant</b> la valeur qui existait</div>
+      <div><b>Après</b> la valeur écrite</div>
+      <div><b>Pourquoi</b> le motif</div>
+      <div><b>Quand</b> horodatage UTC, précis</div>
+      <div><b>Résultat</b> succès ou échec — les deux sont écrits</div>
+    </div>
+    <div class="grille">
+      <div class="fiche"><h3>Append-only</h3><p>On ajoute, on n'efface jamais. Une valeur précédente
+      ne peut pas disparaître du dossier.</p></div>
+      <div class="fiche"><h3>Une entrée même en cas d'échec</h3><p>Connexion refusée, règle rejetée,
+      saisie invalide : l'événement laisse une trace.</p></div>
+      <div class="fiche"><h3>Chaînée</h3><p>Chaque entrée dépend de la précédente. Modifier,
+      déplacer ou insérer quelque chose se voit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Les textes</p>
+    <h2>Ce que les quatre juridictions exigent</h2>
+    <p class="chapeau">Les quatre sont <strong>technologiquement neutres</strong> : elles fixent ce
+    que l'enregistrement doit dire, jamais la marque de l'outil.</p>
+    <div class="duo">
+      <div class="fiche"><h3>États-Unis — FDA</h3>
+        <p>21 CFR Part 11 : des exigences fonctionnelles. Une piste d'audit sûre, générée par
+        ordinateur, horodatée, qui n'obscurcit ni n'efface la valeur précédente. Des signatures
+        électroniques uniques à une personne, à deux composants.</p></div>
+      <div class="fiche"><h3>Chine — NMPA</h3>
+        <p>Enregistrement et gestion des données, annonce 2020 n° 74 : des moyens de gestion
+        <em>et</em> des moyens techniques pour que l'information soit vraie, exacte, complète et
+        traçable. Un enregistrement électronique doit au moins égaler la fonction du papier.</p></div>
+      <div class="fiche"><h3>Japon — PIC/S</h3>
+        <p>PI 041-1 (« Good Practices for Data Management and Integrity », en vigueur depuis le
+        1<sup>er</sup> juillet 2021) et ses neuf attributs, plus la ligne directrice sur les
+        enregistrements et signatures électroniques.</p></div>
+      <div class="fiche"><h3>Canada — Santé Canada</h3>
+        <p>Les lignes directrices sur l'intégrité des données, la même famille ALCOA. À noter : le
+        Canada co-parraine le CMVP avec le NIST, donc une demande de type FIPS peut venir d'un
+        client canadien.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">Sans détour</p>
+    <h2>Ce que nous disons franchement</h2>
+    <ul>
+      <li><strong>Une chaîne de hachage détecte, elle ne prouve pas.</strong> Le hash est
+      recalculable par quiconque peut écrire le fichier : modifier une ligne puis recalculer la
+      chaîne passe la vérification. Pour de la non-répudiation, il faut une signature qui exige un
+      secret. Nous le disons plutôt que de vendre une chaîne comme une preuve.</li>
+      <li><strong>Aucune liste de matériel approuvé n'existe dans ces règlements.</strong> Ce qui
+      existe, ce sont des listes de <em>modules cryptographiques certifiés</em> — FIPS 140-3
+      (CMVP du NIST, co-parrainé par le Canada) et Common Criteria — que certains services qualité
+      aiment citer. Le vrai sujet est ailleurs.</li>
+      <li><strong>Une puce de l'ère SHA-1 est indéfendable</strong> — non parce qu'elle est absente
+      d'une liste, mais parce que le SHA-1 a été retiré des algorithmes approuvés pour les
+      signatures. Du SHA-1 dans une chaîne d'identité ne se défend pas devant un inspecteur.</li>
+      <li><strong>Une exception doit être datée, justifiée et refermée.</strong> Toute liste qui
+      laisse entrer une machine sans identité est un constat d'audit en soi.</li>
+      <li><strong>Un compte partagé ne trace personne.</strong> Le rôle d'administrateur reste, mais
+      il est porté par des comptes nommés — un par employé, y compris sur le poste de travail.</li>
+    </ul>
+    <div class="boutons">
+      <a class="btn btn-noir" href="/contact/">Poser une question</a>
+      <a class="btn btn-clair" href="/ia-de-confiance/">Un LLM dans la boucle</a>
+    </div>
+  </div>
+</section>

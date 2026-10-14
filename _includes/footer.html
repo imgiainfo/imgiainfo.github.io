@@ -1,25 +1,18 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="marque"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></p>
+      <p>Plateformes sur mesure : image, IA, information.<br>
+      IMGIAINFO inc., {{ site.ville }}.</p>
+    </div>
+    <div>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      <a href="tel:{{ site.tel }}">{{ site.phone }}</a></p>
+      <p><a href="/offre/">Ce que nous faisons</a> · <a href="/alcoa/">ALCOA++</a> · <a href="/questions/">Questions</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p>© IMGIAINFO inc. — Tous droits réservés.</p>
+  </div>
+</footer>
+<div class="bande" aria-hidden="true"><i></i><i></i><i></i></div>

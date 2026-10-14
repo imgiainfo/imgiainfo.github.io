@@ -1,0 +1,94 @@
+---
+layout: default
+title: "Un LLM dans la boucle, sans briser ALCOA++"
+description: "Comment IMGIAINFO met un modèle de langage dans une chaîne de travail réglementée : actions pré-faites, validation humaine, et un modèle qui ne crée rien et ne signe rien."
+permalink: /ia-de-confiance/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">IA de confiance</p>
+    <h1>Un LLM dans la boucle,<br><em>sans briser ALCOA++</em></h1>
+    <p class="chapeau">C'est la question qu'on nous pose le plus : comment mettre un modèle dans un
+    procédé qui doit passer un audit ? La réponse tient en une phrase — et elle tient tout le reste.</p>
+  </div>
+</div>
+
+<section class="sombre">
+  <div class="wrap">
+    <p class="citation">« Le modèle ne crée rien<br>et ne signe rien. »</p>
+    <p class="source">Les blocs d'action et les règles sont écrits et validés d'avance, par des
+    humains. Le modèle assemble, il ne fabrique pas.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">Premier principe</p>
+    <h2>Le modèle ne crée rien</h2>
+    <p class="chapeau">Les actions que le système peut exécuter sont écrites et validées d'avance,
+    avant qu'un modèle entre en jeu. Le modèle <strong>construit des patterns à partir de ces blocs
+    déjà préparés</strong> : il choisit, il ordonne, il propose. Il n'écrit pas de code à la volée,
+    il n'invente pas d'action, il n'a pas la main sur la donnée.</p>
+    <ul>
+      <li><strong>Les blocs existent avant lui.</strong> Chaque opération possible est écrite,
+      relue et approuvée par des humains. Le catalogue d'actions est fermé.</li>
+      <li><strong>Il assemble, il ne fabrique pas.</strong> Un modèle qui ne peut pas créer
+      d'action ne peut pas créer d'action non conforme.</li>
+      <li><strong>Ce qu'il produit est une proposition</strong>, jamais un enregistrement.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Deuxième principe</p>
+    <h2>Rien ne s'écrit sans une validation humaine</h2>
+    <p class="chapeau">Aucune valeur n'entre dans un enregistrement réglementé sans qu'une
+    <strong>personne nommée</strong> la valide — et cette validation est elle-même une entrée de la
+    piste, avec son nom, son horodatage et sa machine.</p>
+    <div class="grille">
+      <div class="carte"><h3>À la machine</h3><p>Lire, mesurer, comparer, proposer, ordonner.</p></div>
+      <div class="carte g"><h3>À l'humain</h3><p>Décider, valider, signer — et porter la
+      responsabilité de ce qu'il valide.</p></div>
+      <div class="carte b"><h3>À la piste</h3><p>Garder les deux, dans l'ordre : la proposition du
+      modèle et la décision de la personne.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">En pratique</p>
+    <h2>Ce que ça change pour l'opérateur</h2>
+    <p>Prenons la lecture de documents. Le modèle regarde un scan et propose les valeurs des cases.
+    L'opérateur voit la proposition, la compare au document, et valide ou corrige. Rien de ce que le
+    modèle a proposé n'entre dans le dossier sans ce geste — et la piste garde les deux : « le
+    modèle a proposé ceci », « la personne a validé cela ».</p>
+    <p>Conséquence directe : <strong>un modèle qui se trompe coûte une relecture, pas un dossier
+    invalidé.</strong> Et comme le modèle ne tient pas la plume, on peut l'échanger, le mettre à
+    jour ou le retirer sans invalider un seul dossier déjà validé. C'est exactement ce qu'un service
+    qualité demande d'entendre.</p>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Troisième principe</p>
+    <h2>Où tournent les modèles</h2>
+    <p>Là où vos règles l'exigent : sur votre matériel, dans votre réseau, ou chez un fournisseur
+    que vous choisissez. Nous n'avons aucune dépendance à un service que vous ne contrôlez pas, ni à
+    un nuage public par défaut. Un modèle local plus lent reste préférable à une valeur qui sort de
+    chez vous sans que vous l'ayez décidé.</p>
+    <h3>Ce que nous ne faisons pas</h3>
+    <ul>
+      <li>Laisser un modèle décider seul d'une valeur réglementée.</li>
+      <li>Laisser un modèle signer quoi que ce soit.</li>
+      <li>Écrire dans un dossier ce qu'aucune personne n'a validé.</li>
+    </ul>
+    <div class="boutons">
+      <a class="btn btn-noir" href="/contact/">Parler de votre cas</a>
+      <a class="btn btn-clair" href="/questions/">Les questions fréquentes</a>
+    </div>
+  </div>
+</section>

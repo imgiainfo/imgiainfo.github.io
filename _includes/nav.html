@@ -1,0 +1,16 @@
+<header class="entete">
+  <div class="wrap">
+    <a class="marque" href="/" aria-label="IMGIAINFO, accueil"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Accueil</a></li>
+        <li><a href="/offre/"{% if page.url == "/offre/" %} aria-current="page"{% endif %}><span class="long">Ce que nous faisons</span><span class="court">Offre</span></a></li>
+        <li><a href="/alcoa/"{% if page.url == "/alcoa/" %} aria-current="page"{% endif %}>ALCOA++</a></li>
+        <li><a href="/ia-de-confiance/"{% if page.url == "/ia-de-confiance/" %} aria-current="page"{% endif %}><span class="long">IA de confiance</span><span class="court">IA</span></a></li>
+        <li><a href="/questions/"{% if page.url == "/questions/" %} aria-current="page"{% endif %}>Questions</a></li>
+        <li><a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="bande" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
