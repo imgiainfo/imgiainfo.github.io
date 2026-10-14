@@ -44,7 +44,14 @@ hr{border:0;border-top:1px solid var(--trait);margin:40px 0}
               padding:8px 0;border-bottom:3px solid transparent}
 .entete nav a:hover{border-color:var(--bleu)}
 .entete nav a[aria-current]{border-color:var(--encre)}
-.entete nav .court{display:none}
+
+/* ---------- menu burger (cache sur grand ecran) ---------- */
+.bascule{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.burger{display:none;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+        width:46px;height:40px;border:1px solid var(--trait);border-radius:5px;
+        cursor:pointer;background:#fff}
+.burger span{display:block;width:20px;height:2px;background:var(--encre)}
+.bascule:focus-visible + .burger{outline:2px solid var(--bleu);outline-offset:2px}
 
 /* ---------- bande tricolore : la signature, comme sur la carte ---------- */
 .bande{display:grid;grid-template-columns:1fr 1fr 1fr;height:6px}
@@ -177,6 +184,18 @@ footer a{color:var(--gris)}
   .attributs div:nth-child(3n){border-right:1px solid var(--trait)}
   .attributs div:nth-child(2n){border-right:0}
   .champs{grid-template-columns:1fr}
+  /* la navigation se replie dans le burger */
+  .burger{display:flex}
+  .entete .wrap{gap:14px}
+  .entete nav{flex-basis:100%}
+  .entete nav ul{display:none;flex-direction:column;gap:0;padding:2px 0 12px}
+  .bascule:checked ~ nav ul{display:flex}
+  .entete nav li{flex:none;margin:0;border-top:1px solid var(--trait)}
+  .entete nav li:first-child{border-top:0}
+  .entete nav a{display:block;font-size:17px;padding:11px 0;border-bottom:0}
+  .entete nav a[aria-current]{color:var(--bleu);font-weight:800;border-bottom:0}
+  .entete nav li.langue{border-top:0;padding-top:8px}
+  .entete nav li.langue a{display:inline-block;background:var(--gris-fond)}
 }
 @media (max-width:620px){
   body{font-size:17px}
@@ -184,18 +203,9 @@ footer a{color:var(--gris)}
   .attributs div{border-right:0!important}
   .accroche{padding:52px 0 40px}
   section{padding:52px 0}
-  .entete{position:static}
-  .entete .wrap{gap:10px;min-height:0;padding-top:14px;padding-bottom:12px}
-  .marque{font-size:21px}
+  .entete .wrap{gap:10px;min-height:0;padding-top:10px;padding-bottom:10px}
   .marque-svg{height:22px}
   .marque .mot{font-size:20px}
   .remplacements div{grid-template-columns:1fr;gap:4px;padding:14px 18px}
   .remplacements .vers{font-weight:700}
-  .entete nav .long{display:none}
-  .entete nav .court{display:inline}
-  .entete nav ul{gap:15px;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;
-                 scrollbar-width:none;-ms-overflow-style:none}
-  .entete nav ul::-webkit-scrollbar{display:none}
-  .entete nav li{flex:none}
-  .entete nav a{font-size:15px;padding:4px 0}
 }
