@@ -193,6 +193,9 @@ footer a{color:var(--gris)}
   .remplacements .vers{font-weight:700}
   .entete nav .long{display:none}
   .entete nav .court{display:inline}
-  .entete nav ul{gap:14px}
+  .entete nav ul{gap:15px;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;
+                 scrollbar-width:none;-ms-overflow-style:none}
+  .entete nav ul::-webkit-scrollbar{display:none}
+  .entete nav li{flex:none}
   .entete nav a{font-size:15px;padding:4px 0}
 }
