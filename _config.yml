@@ -2,44 +2,23 @@ url: https://imgiainfo.com
 baseurl: ""
 
 # Site settings
-title: imgiainfo
+title: IMGIAINFO inc.
 email: phildb@imgiainfo.com
-description: "Artist and passionate coder, I explore and develop projects that blend artificial intelligence, visual art, and computer science.
-
-I offer a range of personalized services—from website creation and CRM implementation to systems management and software development. My expertise also extends to artistic creation, including illustrations, light animations, and graphic design, bringing unique and innovative ideas to life.
-
-Each project is an opportunity to fuse aesthetics with performance, delivering solutions that are both functional and inspiring. Welcome to my world, where technology and imagination intertwine to craft truly original experiences."
+description: "Plateformes sur mesure : image, IA, information. IMGIAINFO inc. construit des systemes qui doivent tenir des dossiers qui passent un audit : integrite des donnees ALCOA++, IA de confiance, cloud souverain. Quebec, Canada."
 
 # Team names, titles and social links
 people:
 - name: Philippe Depadova-Berube
   pic: 1
-  position: Designer, Artiste, Technicien Informatique 
+  position: President
   social:
-    - title: Instagram
-      url: #
-    - title: Linkedin
-      url: #
-    - title: Patreon
-      url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    - title: Courriel
+      url: mailto:phildb@imgiainfo.com
 
 # Postal address (add as many lines as necessary)
 address:
   - line: Quebec
-  - line: Montreal
+  - line: Canada
 
 # Build settings
 markdown: kramdown
