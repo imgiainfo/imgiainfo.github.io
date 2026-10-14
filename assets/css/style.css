@@ -177,6 +177,7 @@ footer a{color:var(--gris)}
 .remplacements .de{color:var(--gris)}
 .remplacements .vers{color:var(--encre);font-weight:700}
 
+/* ---------- sous 900 px : la mise en page se replie ---------- */
 @media (max-width:900px){
   .grille,.sombre .faits,.coordonnees{grid-template-columns:1fr}
   .duo{grid-template-columns:1fr;gap:26px}
@@ -184,9 +185,14 @@ footer a{color:var(--gris)}
   .attributs div:nth-child(3n){border-right:1px solid var(--trait)}
   .attributs div:nth-child(2n){border-right:0}
   .champs{grid-template-columns:1fr}
-  /* la navigation se replie dans le burger */
-  .burger{display:flex}
   .entete .wrap{gap:14px}
+}
+
+/* ---------- jusqu'a 1180 px : la navigation se replie dans le burger ----------
+   Telephone, telephone couche, tablette : au-dela, la barre complete ne tient
+   pas sur une ligne et se casserait en deux rangees. */
+@media (max-width:1180px){
+  .burger{display:flex}
   .entete nav{flex-basis:100%}
   .entete nav ul{display:none;flex-direction:column;gap:0;padding:2px 0 12px}
   .bascule:checked ~ nav ul{display:flex}
@@ -197,15 +203,117 @@ footer a{color:var(--gris)}
   .entete nav li.langue{border-top:0;padding-top:8px}
   .entete nav li.langue a{display:inline-block;background:var(--gris-fond)}
 }
+
+/* =====================================================================
+   FORMATS
+   Le site est dessine d'abord pour l'ordinateur ; chaque format ajuste
+   ensuite. Cinq seuils, plus l'impression et les preferences du systeme.
+     <= 620 px      telephone
+     621-900 px     grande tablette, telephone couche
+     901-1180 px    tablette
+     1181-1600 px   ordinateur   <- mise en page de base
+     >= 1601 px     television et tres grand ecran
+     >= 2200 px     television 4K et mur d'images
+   ===================================================================== */
+
+/* ---------- telephone : jusqu'a 620 px ---------- */
 @media (max-width:620px){
   body{font-size:17px}
-  .attributs{grid-template-columns:1fr}
-  .attributs div{border-right:0!important}
-  .accroche{padding:52px 0 40px}
-  section{padding:52px 0}
+  /* encoche et coins arrondis : le contenu ne doit pas passer dessous */
+  .wrap{padding-left:max(18px,env(safe-area-inset-left));
+        padding-right:max(18px,env(safe-area-inset-right))}
   .entete .wrap{gap:10px;min-height:0;padding-top:10px;padding-bottom:10px}
   .marque-svg{height:22px}
   .marque .mot{font-size:20px}
+  .accroche{padding:46px 0 34px}
+  section{padding:46px 0}
+  .sombre{padding:54px 0}
+  .boutons .btn{width:100%;text-align:center}     /* la cible du pouce */
+  .attributs{grid-template-columns:1fr}
+  .attributs div{border-right:0!important}
   .remplacements div{grid-template-columns:1fr;gap:4px;padding:14px 18px}
-  .remplacements .vers{font-weight:700}
+  footer .wrap{flex-direction:column;gap:20px}
+}
+
+/* ---------- grande tablette, telephone couche : 621 a 900 px ---------- */
+@media (min-width:621px) and (max-width:900px){
+  body{font-size:17.5px}
+  .accroche{padding:60px 0 44px}
+  section{padding:56px 0}
+}
+
+/* ---------- tablette : 901 a 1180 px ---------- */
+@media (min-width:901px) and (max-width:1180px){
+  .grille{gap:22px}
+  section{padding:64px 0}
+}
+
+/* ---------- television et tres grand ecran : a partir de 1601 px ----------
+   On regarde un televiseur a trois metres : le texte grossit, la page se
+   resserre au centre, et les marges s'elargissent pour le rognage. */
+@media (min-width:1601px){
+  :root{--large:1280px;--lecture:840px}
+  body{font-size:19.5px}
+  .wrap{padding-left:40px;padding-right:40px}
+  .marque-svg{height:30px}
+  .marque .mot{font-size:27px}
+  .entete .wrap{min-height:80px}
+  .entete nav a{font-size:17.5px}
+  .accroche{padding:104px 0 80px}
+  .accroche h1{font-size:68px}
+  h2{font-size:38px}
+  h3{font-size:22px}
+  section{padding:88px 0}
+  .sombre{padding:104px 0}
+  .sombre .citation{font-size:56px}
+  .btn{padding:17px 32px;font-size:18.5px}
+  .carte,.fiche{padding:30px 28px}
+}
+
+/* ---------- television 4K et mur d'images : a partir de 2200 px ---------- */
+@media (min-width:2200px){
+  :root{--large:1520px;--lecture:900px}
+  body{font-size:22px}
+  .marque-svg{height:34px}
+  .marque .mot{font-size:30px}
+  .entete .wrap{min-height:92px}
+  .accroche{padding:120px 0 96px}
+  .accroche h1{font-size:80px}
+  h2{font-size:44px}
+  section{padding:104px 0}
+  .sombre .citation{font-size:64px}
+}
+
+/* ---------- ecran large et court : portable 13 po, telephone couche ---------- */
+@media (max-height:560px) and (orientation:landscape){
+  .accroche{padding:30px 0 22px}
+  section{padding:34px 0}
+  .entete{position:static}
+}
+
+/* ---------- impression ---------- */
+@media print{
+  body{font-size:11pt;color:#000;background:#fff}
+  .entete{position:static;border-bottom:2px solid #000}
+  .entete nav,.burger,.bascule,.boutons,.bande{display:none!important}
+  .accroche{padding:0 0 10pt}
+  section{padding:10pt 0;border:0}
+  section.gris{background:#fff}
+  .sombre{background:#fff!important;color:#000!important;padding:10pt 0}
+  .sombre .citation,.sombre .citation *{color:#000}
+  .sombre .source,.sombre .faits span,.note{color:#333}
+  .carte,.fiche,.remplacements,.attributs,.attributs div{break-inside:avoid;border-color:#999}
+  a{color:#000;text-decoration:underline}
+  footer{border-top:1px solid #000;color:#000}
+}
+
+/* ---------- preferences du systeme ---------- */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+@media (prefers-contrast:more){
+  :root{--gris:#31363C;--texte:#1B1F24;--trait:#8A929B}
+}
+@media (hover:none){
+  .entete nav a:hover{border-color:transparent}
 }
