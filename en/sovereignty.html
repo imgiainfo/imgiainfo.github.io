@@ -1,0 +1,129 @@
+---
+layout: default
+lang: en
+title: "Digital sovereignty"
+description: "Replacing the dependency on American companies: Linux, Droidian, our own services, and models that run on your hardware — even modest hardware."
+permalink: /en/sovereignty/
+alt: /souverainete/
+alt_fr: /souverainete/
+alt_en: /en/sovereignty/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Digital sovereignty</p>
+    <h1>Replacing the dependency<br><em>on American companies</em></h1>
+    <p class="chapeau">This is not a political opinion, it is a technical property: does your system
+    keep working if a supplier decides otherwise? We build so that the answer is yes.</p>
+  </div>
+</div>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">The problem, straight</p>
+    <h2>What a dependency costs</h2>
+    <p class="chapeau">A dependency only hurts at the moment it reminds you it is there. Here are
+    the five moments, all of which have already happened to somebody:</p>
+    <ul>
+      <li><strong>The terms change.</strong> The supplier changes its prices, its limits or its usage
+      rules, and you sign nothing: it is already done.</li>
+      <li><strong>The service stops.</strong> A closed API, a suspended account, a country no longer
+      served — and your work chain stops with it.</li>
+      <li><strong>The data lives elsewhere.</strong> It sits with them, under their backups, and a
+      foreign law can compel them to hand it over without asking you.</li>
+      <li><strong>The roadmap is not yours.</strong> What you need is not on the next release plan.
+      You wait.</li>
+      <li><strong>The cost varies.</strong> Usage pricing cannot be budgeted: it grows with volume,
+      and your volume decides.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">The replacement</p>
+    <h2>What we replace, and with what</h2>
+    <p class="chapeau">Nothing exotic: free software, installed at your site, which we know how to
+    run and keep up to date.</p>
+    <div class="remplacements">
+      <div><b class="de">Windows, macOS</b><span class="vers">Linux (Debian)</span></div>
+      <div><b class="de">Android and its services</b><span class="vers">Droidian: Debian on a phone, no imposed service</span></div>
+      <div><b class="de">The development cloud (GitHub and the like)</b><span class="vers">Our own git forge, self-hosted, at your site</span></div>
+      <div><b class="de">Models behind an API (OpenAI, Anthropic, Google)</b><span class="vers">Open models, served on your hardware</span></div>
+      <div><b class="de">Hardware you are forced to replace</b><span class="vers">Yours, kept in service longer</span></div>
+      <div><b class="de">The invisible dependencies of a website (remote fonts, CDN, trackers)</b><span class="vers">None: this site loads nothing from a third party</span></div>
+    </div>
+    <p class="note">The last line is not a promise: open your browser console on this page, there is
+    no request to a foreign domain.</p>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Two examples</p>
+    <h2>This is not theory, it is work already done</h2>
+    <div class="duo">
+      <div class="fiche"><h3>Droidian, on an abandoned phone</h3>
+        <p>We installed a complete Linux system — Debian — on a 2018 Huawei P20 Lite that its
+        manufacturer no longer supports: same device, another system, and nobody decides in your
+        place when updates stop. The phone stays a phone: it calls, it takes the network, it fits in
+        a pocket.</p>
+        <p class="note">This is not a demonstration project: it is the system we use.</p></div>
+      <div class="fiche"><h3>Odysseus, the assistant that stays home</h3>
+        <p>A free agent harness (AGPL-3.0) turned into a native desktop application, with no
+        embedded browser: the server computes, the client displays. Models running on your hardware
+        plug straight into it — which is what makes it possible to compare several models on the
+        same question, blind, and to choose on evidence rather than reputation.</p>
+        <p class="note">The licence and the provenance stay in the repository, with the code.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">The hardware</p>
+    <h2>A 2018 card and 30 GB of memory are enough</h2>
+    <p class="chapeau">It is the question that always comes back: “surely you need a $20,000 server
+    to run a large model?” No. And the reasoning is simple.</p>
+    <p>A large model does not have to fit inside the graphics card's memory. What fits there is only
+    the part that is active while it works. The rest — which is nearly all of it — can live in
+    system memory and on disk, and be called in as needed. That is exactly what a mixture-of-experts
+    (MoE) model is: at each step, a small part of the parameters is engaged, not the whole set.</p>
+    <div class="grille">
+      <div class="carte"><h3>What matters</h3><p>The card's memory is not the limit of the model.
+      It is the limit of what you keep within immediate reach.</p></div>
+      <div class="carte g"><h3>What really helps</h3><p>System memory in quantity — 30 GB changes
+      everything — and a disk fast enough to feed the next step.</p></div>
+      <div class="carte b"><h3>What comes out</h3><p>An open model, served at your site, with no
+      usage bill and no data leaving the room.</p></div>
+    </div>
+    <h3>And performance?</h3>
+    <p>On the tasks a process actually contains — <strong>reading a document, filling a field,
+    writing a query, structuring an answer, classifying an image</strong> — an open model served on
+    modest hardware does the work usually asked of a paid service. Open models in 2026 are no longer
+    toys: what cost a fortune two years ago now runs on an 11 GB card and 30 GB of system memory.</p>
+    <p>What that changes for a company, more than the price: <strong>the data stays</strong>,
+    <strong>the cost is fixed</strong>, and <strong>no supplier can change the rules or cut the
+    service</strong>. Three things a cloud service cannot promise, by construction.</p>
+    <p class="note">What it does not replace, and we say so: a frontier model on every subject at
+    once and on the first attempt at an unseen problem. On a targeted task, the comparison holds;
+    elsewhere, measure before asserting.</p>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">What it is not</p>
+    <h2>Sovereignty is not autarky</h2>
+    <p>We are not asking anyone to rebuild everything and throw everything away. A company is
+    entitled to use American software that works well. What sovereignty adds is <strong>the
+    exit</strong>: being able to leave with your data, your rules and your process, the day the
+    supplier changes its mind.</p>
+    <p>Buying from a supplier who can close the door on you is not a problem as long as the door
+    stays open. We build so that it stays open.</p>
+    <div class="boutons">
+      <a class="btn btn-noir" href="/en/contact/">Talk about your system</a>
+      <a class="btn btn-clair" href="/en/trusted-ai/">An LLM in the loop</a>
+    </div>
+  </div>
+</section>

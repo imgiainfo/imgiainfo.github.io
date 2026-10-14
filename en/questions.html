@@ -1,0 +1,114 @@
+---
+layout: default
+lang: en
+title: "Frequent questions"
+description: "The questions we get: ALCOA++, an LLM in the loop, FDA and Health Canada audits, shared accounts, hardware, machine identity, hash chains, sovereignty."
+permalink: /en/questions/
+alt: /questions/
+alt_fr: /questions/
+alt_en: /en/questions/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Frequent questions</p>
+    <h1>What a visitor<br><em>wants to know</em></h1>
+    <p class="chapeau">Short answers. If yours is not here, we want to hear it —
+    <a href="/en/contact/">write to us</a>.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap lecture">
+    <dl class="faq">
+
+      <dt>What exactly do you do?</dt>
+      <dd>Tailor-made platforms. We take a process that lives on paper or in a spreadsheet and turn
+      it into a system that does the work for real, with the trace that goes with it. One team, from
+      the workstation to the server.</dd>
+
+      <dt>What does ALCOA++ mean?</dt>
+      <dd>The rule that governs everything we deliver: the nine attributes of data integrity —
+      attributable, legible, contemporaneous, original, accurate, complete, consistent, enduring,
+      available — plus two things we put on every line: the identity of the machine, and the
+      verification of the chain. The acronym is written with two plus signs in all our documents.
+      <a href="/en/alcoa/">The full page is here.</a></dd>
+
+      <dt>How do you put an LLM in the loop without breaking ALCOA++?</dt>
+      <dd>The model creates nothing and signs nothing. Actions are written and validated in advance
+      by humans; the model builds patterns out of those pre-prepared blocks, it chooses and it
+      orders. Nothing enters a record without a named person validating it, and that validation is
+      itself an entry in the log. <a href="/en/trusted-ai/">The detail is here.</a></dd>
+
+      <dt>Will it pass an audit?</dt>
+      <dd>We answer with the trace, not with a promise. Four jurisdictions concern us: the FDA
+      (21 CFR Part 11, functional requirements), China (NMPA, management <em>and</em> technical
+      measures), Japan (PIC/S PI 041-1 and its nine attributes) and Health Canada. All four are
+      technologically neutral: they state what the record must say, not the brand of the tool.</dd>
+
+      <dt>Is hardware on an approved list required?</dt>
+      <dd>No — none of the four jurisdictions has an approved-hardware list. What exists are lists of
+      <em>certified cryptographic modules</em> (FIPS 140-3 from NIST and Canada, Common Criteria)
+      that some quality departments like to cite. The real subject is not the list: it is the
+      substance. A SHA-1 era chip cannot be defended, because SHA-1 was withdrawn from the
+      algorithms approved for signatures.</dd>
+
+      <dt>How do you know who wrote what?</dt>
+      <dd>Through named accounts, one per employee. A shared account that creates or changes a batch
+      value cannot be traced back to the person who acted — that is written plainly in PIC/S
+      PI 041-1 and in Annex 5 of WHO TRS 996. The administrator role remains: it is simply carried
+      by people.</dd>
+
+      <dt>What if three operators share the same workstation?</dt>
+      <dd>It is the same problem, one level lower — and the texts cover network environments too.
+      That is where the two identities separate: the <strong>person</strong> is a named account, the
+      <strong>machine</strong> is a key. The record names both.</dd>
+
+      <dt>How is the machine identified?</dt>
+      <dd>On first contact its key is pinned, and that key signs the actions afterwards. The machine
+      identity becomes a fact rather than a declaration — with no list of approved machines to
+      maintain.</dd>
+
+      <dt>Is a hash chain enough?</dt>
+      <dd>No, and we say so ourselves: it <strong>detects</strong> a change, it does not
+      <strong>prove</strong> one. Anyone who can write the file can recompute the chain.
+      Non-repudiation requires a signature that demands a secret. We add that where the stakes
+      justify it, and we do not sell a chain as proof.</dd>
+
+      <dt>Can the model be wrong?</dt>
+      <dd>Yes, and the system is built for it. A wrong proposal is a wrong proposal: it does not
+      enter the record until a human validates it, and the log keeps the proposal as well as the
+      decision.</dd>
+
+      <dt>Where do your models run?</dt>
+      <dd>Where your rules demand it: on your hardware, inside your network, or with a provider you
+      choose. No dependency on a service you do not control.</dd>
+
+      <dt>Do you take over an existing system?</dt>
+      <dd>Yes. We start from what already runs — an application, a paper process, a set of files —
+      and we add what is missing: structure, traceability, safeguards, validation. A full
+      replacement is possible, but it is not the starting point.</dd>
+
+      <dt>How do you cut the dependency on American companies?</dt>
+      <dd>By replacing what can be replaced with free software installed at your site: Linux instead
+      of Windows, Droidian instead of Android and its services, our own self-hosted git forge
+      instead of GitHub, open models on your hardware instead of paid APIs. <a
+      href="/en/sovereignty/">The sovereignty page</a> lists what goes and what comes in.</dd>
+
+      <dt>Does a large model require a new server?</dt>
+      <dd>No. A model does not have to fit inside the graphics card: only the part that is active
+      needs to be within immediate reach, and the rest can live in system memory and on disk. An
+      11 GB card and 30 GB of system memory run a large mixture-of-experts model — and on targeted
+      tasks it does the work usually asked of a paid service, with the data staying at your
+      site.</dd>
+
+      <dt>What language do you work in?</dt>
+      <dd>French and English. Client documents can be delivered in either.</dd>
+
+      <dt>How do we reach you?</dt>
+      <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a> — IMGIAINFO inc.,
+      {{ site.ville }}.</dd>
+
+    </dl>
+  </div>
+</section>

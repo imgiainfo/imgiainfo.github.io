@@ -1,0 +1,117 @@
+---
+layout: default
+lang: en
+title: "What ALCOA++ means"
+description: "ALCOA++: the nine attributes of data integrity, what every audit entry carries, and what the four jurisdictions really require. IMGIAINFO inc."
+permalink: /en/alcoa/
+alt: /alcoa/
+alt_fr: /alcoa/
+alt_en: /en/alcoa/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Data integrity</p>
+    <h1>What<br><em>ALCOA++</em> means</h1>
+    <p class="chapeau">It is the data-integrity rule that governs everything we deliver. It comes
+    from the <strong>ALCOA+</strong> standard — the nine attributes expected of a record in a
+    regulated environment — which we write and apply with two plus signs, the way we write it on
+    all our documents.</p>
+  </div>
+</div>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">The nine attributes</p>
+    <h2>A record must be able to answer on its own</h2>
+    <div class="attributs">
+      <div><b>Attributable</b><span>We know who wrote it, and from which machine.</span></div>
+      <div><b>Legible</b><span>The data stays readable for its whole life.</span></div>
+      <div><b>Contemporaneous</b><span>Written when the action happens, never afterwards.</span></div>
+      <div><b>Original</b><span>The original data — not a copy retyped later.</span></div>
+      <div><b>Accurate</b><span>The real value, without retouching.</span></div>
+      <div><b>Complete</b><span>Including what failed, was refused or was cancelled.</span></div>
+      <div><b>Consistent</b><span>The same rules everywhere, in the order of events.</span></div>
+      <div><b>Enduring</b><span>The trace outlives the machine, the software and the years.</span></div>
+      <div><b>Available</b><span>Readable and exportable on an inspector's request.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">The trace</p>
+    <h2>What every entry carries</h2>
+    <div class="champs">
+      <div><b>Who</b> a named user, never a shared account</div>
+      <div><b>Where from</b> the machine, identified by its key</div>
+      <div><b>What</b> the action taken</div>
+      <div><b>Before</b> the value that existed</div>
+      <div><b>After</b> the value written</div>
+      <div><b>Why</b> the reason</div>
+      <div><b>When</b> a precise UTC timestamp</div>
+      <div><b>Result</b> success or failure — both are written</div>
+    </div>
+    <div class="grille">
+      <div class="fiche"><h3>Append-only</h3><p>You add, you never erase. A previous value cannot
+      disappear from the record.</p></div>
+      <div class="fiche"><h3>An entry even on failure</h3><p>A refused login, a rejected rule, an
+      invalid entry: the event leaves a trace.</p></div>
+      <div class="fiche"><h3>Chained</h3><p>Every entry depends on the previous one. Editing,
+      moving or inserting something shows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">The texts</p>
+    <h2>What the four jurisdictions require</h2>
+    <p class="chapeau">All four are <strong>technologically neutral</strong>: they state what the
+    record must say, never the brand of the tool.</p>
+    <div class="duo">
+      <div class="fiche"><h3>United States — FDA</h3>
+        <p>21 CFR Part 11: functional requirements. A secure, computer-generated, time-stamped audit
+        trail that does not obscure or erase the previous value. Electronic signatures unique to one
+        individual, using two components.</p></div>
+      <div class="fiche"><h3>China — NMPA</h3>
+        <p>Records and data management, 2020 announcement No. 74: management <em>and</em> technical
+        measures so that information is true, accurate, complete and traceable. An electronic record
+        must at least equal the function of paper.</p></div>
+      <div class="fiche"><h3>Japan — PIC/S</h3>
+        <p>PI 041-1 (“Good Practices for Data Management and Integrity”, in force since 1 July 2021)
+        and its nine attributes, plus the guideline on electronic records and signatures.</p></div>
+      <div class="fiche"><h3>Canada — Health Canada</h3>
+        <p>The Health Canada data-integrity guidelines, the same ALCOA family. Worth noting: Canada
+        co-sponsors the CMVP with NIST, so a FIPS-type request can come from a Canadian client.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">Straight talk</p>
+    <h2>What we say plainly</h2>
+    <ul>
+      <li><strong>A hash chain detects, it does not prove.</strong> The hash is recomputable by
+      anyone who can write the file: change a line, recompute the chain, and the verification
+      passes. Non-repudiation needs a signature that requires a secret. We say this rather than
+      selling a chain as proof.</li>
+      <li><strong>No approved-hardware list exists in these regulations.</strong> What exists are
+      lists of <em>certified cryptographic modules</em> — FIPS 140-3 (the NIST CMVP, co-sponsored by
+      Canada) and Common Criteria — which some quality departments like to cite. The real subject is
+      elsewhere.</li>
+      <li><strong>A SHA-1 era chip cannot be defended</strong> — not because it is absent from a
+      list, but because SHA-1 was withdrawn from the algorithms approved for signatures. SHA-1 in an
+      identity chain does not stand in front of an inspector.</li>
+      <li><strong>An exception must be dated, justified and closed.</strong> Any list that lets a
+      machine in without an identity is an audit finding in itself.</li>
+      <li><strong>A shared account traces nobody.</strong> The administrator role stays, but it is
+      carried by named accounts — one per employee, on the workstation as well.</li>
+    </ul>
+    <div class="boutons">
+      <a class="btn btn-noir" href="/en/contact/">Ask a question</a>
+      <a class="btn btn-clair" href="/en/trusted-ai/">An LLM in the loop</a>
+    </div>
+  </div>
+</section>

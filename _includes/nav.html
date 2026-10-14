@@ -1,14 +1,26 @@
 <header class="entete">
   <div class="wrap">
-    <a class="marque" href="/" aria-label="IMGIAINFO, accueil"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></a>
+    <a class="marque" href="{% if page.lang == "en" %}/en/{% else %}/{% endif %}">{% include marque.html %}<span class="mot"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></span></a>
     <nav aria-label="Navigation principale">
       <ul>
+{% if page.lang == "en" %}
+        <li><a href="/en/"{% if page.url == "/en/" %} aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="/en/what-we-do/"{% if page.url == "/en/what-we-do/" %} aria-current="page"{% endif %}><span class="long">What we do</span><span class="court">Offer</span></a></li>
+        <li><a href="/en/alcoa/"{% if page.url == "/en/alcoa/" %} aria-current="page"{% endif %}>ALCOA++</a></li>
+        <li><a href="/en/trusted-ai/"{% if page.url == "/en/trusted-ai/" %} aria-current="page"{% endif %}><span class="long">Trusted AI</span><span class="court">AI</span></a></li>
+        <li><a href="/en/sovereignty/"{% if page.url == "/en/sovereignty/" %} aria-current="page"{% endif %}><span class="long">Sovereignty</span><span class="court">Souv.</span></a></li>
+        <li><a href="/en/questions/"{% if page.url == "/en/questions/" %} aria-current="page"{% endif %}><span class="long">Questions</span><span class="court">FAQ</span></a></li>
+        <li><a href="/en/contact/"{% if page.url == "/en/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+{% else %}
         <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Accueil</a></li>
         <li><a href="/offre/"{% if page.url == "/offre/" %} aria-current="page"{% endif %}><span class="long">Ce que nous faisons</span><span class="court">Offre</span></a></li>
         <li><a href="/alcoa/"{% if page.url == "/alcoa/" %} aria-current="page"{% endif %}>ALCOA++</a></li>
         <li><a href="/ia-de-confiance/"{% if page.url == "/ia-de-confiance/" %} aria-current="page"{% endif %}><span class="long">IA de confiance</span><span class="court">IA</span></a></li>
-        <li><a href="/questions/"{% if page.url == "/questions/" %} aria-current="page"{% endif %}>Questions</a></li>
+        <li><a href="/souverainete/"{% if page.url == "/souverainete/" %} aria-current="page"{% endif %}><span class="long">Souveraineté</span><span class="court">Souv.</span></a></li>
+        <li><a href="/questions/"{% if page.url == "/questions/" %} aria-current="page"{% endif %}><span class="long">Questions</span><span class="court">FAQ</span></a></li>
         <li><a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+{% endif %}
+        <li class="langue"><a href="{{ page.alt }}" hreflang="{% if page.lang == "en" %}fr{% else %}en{% endif %}" title="{% if page.lang == "en" %}Version française{% else %}English version{% endif %}">{% if page.lang == "en" %}FR{% else %}EN{% endif %}</a></li>
       </ul>
     </nav>
   </div>

@@ -79,6 +79,7 @@ h3{font-size:20px;margin:32px 0 6px}
 
 /* ---------- trois axes ---------- */
 .grille{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:38px}
+.grille.deux{grid-template-columns:repeat(2,1fr)}
 .carte{background:#fff;border:1px solid var(--trait);border-top:6px solid var(--gris);
        padding:26px 24px;display:flex;flex-direction:column}
 .carte.g{border-top-color:var(--vert)}
@@ -140,6 +141,35 @@ footer{padding:48px 0 64px;color:var(--gris);font-size:16px;border-top:1px solid
 footer .wrap{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
 footer a{color:var(--gris)}
 
+/* ---------- la marque iii ---------- */
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--encre)}
+.marque-svg{height:26px;width:auto;display:block;flex:none}
+.marque .mot{font-size:23px;font-weight:820;letter-spacing:.005em;white-space:nowrap}
+.marque .g{color:var(--vert)}
+.marque .r{color:var(--rouge)}
+.marque .b{color:var(--bleu)}
+.marque-pied{display:flex;align-items:center;gap:10px;margin:0 0 12px}
+.marque-pied .marque-svg{height:22px}
+.marque-pied .mot{font-size:20px;font-weight:820}
+.marque-pied .g{color:var(--vert)}
+.marque-pied .r{color:var(--rouge)}
+.marque-pied .b{color:var(--bleu)}
+
+/* ---------- selecteur de langue ---------- */
+.entete nav li.langue a{border:1px solid var(--trait);border-radius:4px;padding:4px 9px;
+                        font-size:13.5px;font-weight:800;letter-spacing:.08em;color:var(--gris)}
+.entete nav li.langue a:hover{border-color:var(--bleu);color:var(--encre)}
+
+/* ---------- ce qu'on remplace, par quoi ---------- */
+.remplacements{border:1px solid var(--trait);margin-top:34px}
+.remplacements div{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:16px 22px;
+                   border-bottom:1px solid var(--trait)}
+.remplacements div:last-child{border-bottom:0}
+.remplacements b{font-size:17.5px}
+.remplacements span{color:var(--texte);font-size:17px}
+.remplacements .de{color:var(--gris)}
+.remplacements .vers{color:var(--encre);font-weight:700}
+
 @media (max-width:900px){
   .grille,.sombre .faits,.coordonnees{grid-template-columns:1fr}
   .duo{grid-template-columns:1fr;gap:26px}
@@ -157,6 +187,10 @@ footer a{color:var(--gris)}
   .entete{position:static}
   .entete .wrap{gap:10px;min-height:0;padding-top:14px;padding-bottom:12px}
   .marque{font-size:21px}
+  .marque-svg{height:22px}
+  .marque .mot{font-size:20px}
+  .remplacements div{grid-template-columns:1fr;gap:4px;padding:14px 18px}
+  .remplacements .vers{font-weight:700}
   .entete nav .long{display:none}
   .entete nav .court{display:inline}
   .entete nav ul{gap:14px}

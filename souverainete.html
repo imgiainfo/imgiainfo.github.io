@@ -1,0 +1,133 @@
+---
+layout: default
+lang: fr
+title: "Souveraineté numérique"
+description: "Remplacer la dépendance aux compagnies américaines : Linux, Droidian, nos propres services, et des modèles qui tournent sur votre matériel — même modeste."
+permalink: /souverainete/
+alt: /en/sovereignty/
+alt_fr: /souverainete/
+alt_en: /en/sovereignty/
+---
+
+<div class="accroche">
+  <div class="wrap">
+    <p class="sur">Souveraineté numérique</p>
+    <h1>Remplacer la dépendance<br><em>aux compagnies américaines</em></h1>
+    <p class="chapeau">Ce n'est pas une opinion politique, c'est une propriété technique : est-ce
+    que votre système continue de fonctionner si un fournisseur décide le contraire? Nous
+    construisons pour que la réponse soit oui.</p>
+  </div>
+</div>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Le problème, sans détour</p>
+    <h2>Ce que coûte une dépendance</h2>
+    <p class="chapeau">Une dépendance ne fait mal qu'au moment où elle se rappelle à vous. Voici
+    les cinq moments, tous déjà arrivés à quelqu'un :</p>
+    <ul>
+      <li><strong>Les conditions changent.</strong> Le fournisseur modifie ses prix, ses limites ou
+      ses règles d'usage, et vous n'avez rien à signer : c'est déjà fait.</li>
+      <li><strong>Le service s'arrête.</strong> Une API fermée, un compte suspendu, un pays qui
+      n'est plus desservi — et votre chaîne de travail s'arrête avec.</li>
+      <li><strong>Les données vivent ailleurs.</strong> Elles sont chez lui, sous ses sauvegardes,
+      et une loi étrangère peut l'obliger à les remettre sans vous demander votre avis.</li>
+      <li><strong>La feuille de route n'est pas la vôtre.</strong> Ce dont vous avez besoin ne
+      figure pas au plan de la prochaine version. Vous attendez.</li>
+      <li><strong>Le coût est variable.</strong> Un prix à l'usage ne se budgette pas : il
+      augmente avec le volume, et c'est votre volume qui décide.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">Le remplacement</p>
+    <h2>Ce que nous remplaçons, par quoi</h2>
+    <p class="chapeau">Rien d'exotique : des logiciels libres, installés chez vous, que nous
+    savons faire tourner et tenir à jour.</p>
+    <div class="remplacements">
+      <div><b class="de">Windows, macOS</b><span class="vers">Linux (Debian)</span></div>
+      <div><b class="de">Android et ses services</b><span class="vers">Droidian : Debian sur téléphone, sans service imposé</span></div>
+      <div><b class="de">Le nuage de développement (GitHub et compagnie)</b><span class="vers">Notre forge git, auto-hébergée, chez vous</span></div>
+      <div><b class="de">Les modèles en API (OpenAI, Anthropic, Google)</b><span class="vers">Des modèles ouverts, servis sur votre matériel</span></div>
+      <div><b class="de">Le matériel qu'on vous force à remplacer</b><span class="vers">Le vôtre, tenu à jour plus longtemps</span></div>
+      <div><b class="de">Les dépendances invisibles d'un site (polices distantes, CDN, traqueurs)</b><span class="vers">Aucune : ce site ne charge rien d'un tiers</span></div>
+    </div>
+    <p class="note">La dernière ligne n'est pas une promesse : ouvrez la console de votre
+    navigateur sur cette page, il n'y a aucune requête vers un domaine étranger.</p>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Deux exemples</p>
+    <h2>Ce n'est pas une théorie, c'est du travail fait</h2>
+    <div class="duo">
+      <div class="fiche"><h3>Droidian, sur un téléphone abandonné</h3>
+        <p>Nous avons installé un système Linux complet — Debian — sur un Huawei P20 Lite de 2018
+        dont le fabricant ne fournit plus rien : même appareil, autre système, et personne ne décide
+        à votre place quand les mises à jour s'arrêtent. Le téléphone reste un téléphone : il
+        appelle, il prend le réseau, il tient dans une poche.</p>
+        <p class="note">Ce n'est pas un projet de démonstration : c'est le système qu'on utilise.</p></div>
+      <div class="fiche"><h3>Odysseus, l'assistant qui reste chez vous</h3>
+        <p>Un harnais d'agent libre (AGPL-3.0) transformé en application de bureau native, sans
+        navigateur embarqué : le serveur calcule, le client affiche. Les modèles qui tournent chez
+        vous s'y branchent directement — c'est ce qui permet de comparer plusieurs modèles sur la
+        même question, à l'aveugle, et de choisir sur pièce plutôt que sur la réputation.</p>
+        <p class="note">La licence et la provenance restent dans le dépôt, avec le code.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="sur">Le matériel</p>
+    <h2>Une carte de 2018 et 30 Go de mémoire suffisent</h2>
+    <p class="chapeau">C'est la question qui revient toujours : « il faut forcément un serveur à
+    20 000 $ pour faire tourner un grand modèle? » Non. Et le raisonnement est simple.</p>
+    <p>Un modèle de grande taille n'a pas besoin de tenir dans la mémoire de la carte graphique.
+    Ce qui tient dedans, c'est seulement la partie active au moment où elle travaille. Le reste —
+    et c'est presque tout — peut vivre dans la mémoire système et sur le disque, et être appelé
+    au fur et à mesure. Un modèle à experts (MoE), c'est exactement ça : à chaque étape, une
+    petite partie des paramètres est sollicitée, pas la totalité.</p>
+    <div class="grille">
+      <div class="carte"><h3>Ce qui compte</h3><p>La mémoire de la carte n'est pas la limite
+      du modèle. C'est la limite de ce qu'on garde à portée immédiate.</p></div>
+      <div class="carte g"><h3>Ce qui aide vraiment</h3><p>De la mémoire système en quantité —
+      30 Go changent tout — et un disque assez rapide pour alimenter la suite.</p></div>
+      <div class="carte b"><h3>Ce qui en sort</h3><p>Un modèle ouvert, servi chez vous, sans
+      facture à l'usage et sans que la donnée sorte de la pièce.</p></div>
+    </div>
+    <h3>Et la performance?</h3>
+    <p>Sur les tâches d'un procédé — <strong>lire un document, remplir une case, écrire une requête,
+    structurer une réponse, classer une image</strong> — un modèle ouvert servi sur du matériel
+    modeste fait le travail qu'on demande habituellement à un service payant. Les modèles ouverts
+    de 2026 ne sont plus des jouets : ce qui coûtait une fortune il y a deux ans tient maintenant
+    sur une carte de 11 Go et 30 Go de mémoire système.</p>
+    <p>Ce que ça change pour une entreprise, plus que le prix : <strong>la donnée reste</strong>,
+    <strong>le coût est fixe</strong>, et <strong>aucun fournisseur ne peut modifier les règles ou
+    couper le service</strong>. Trois choses qu'un service en nuage ne peut pas promettre, par
+    construction.</p>
+    <p class="note">Ce que ça ne remplace pas, et nous le disons : un modèle frontière sur tous les
+    sujets à la fois et sur la première tentative d'un problème jamais vu. Sur une tâche ciblée, la
+    comparaison tient; ailleurs, il faut mesurer avant d'affirmer.</p>
+  </div>
+</section>
+
+<section class="gris">
+  <div class="wrap">
+    <p class="sur">Ce que ce n'est pas</p>
+    <h2>La souveraineté n'est pas de l'autarcie</h2>
+    <p>Nous ne demandons à personne de tout refaire et de tout jeter. Une entreprise a le droit
+    d'utiliser un logiciel américain qui fonctionne bien. Ce que la souveraineté ajoute, c'est
+    <strong>la sortie</strong> : pouvoir partir avec ses données, ses règles et son procédé, le jour
+    où le fournisseur change d'avis.</p>
+    <p>Acheter chez un fournisseur qui peut vous fermer la porte n'est pas un problème tant que la
+    porte reste ouverte. Nous construisons pour qu'elle reste ouverte.</p>
+    <div class="boutons">
+      <a class="btn btn-noir" href="/contact/">Parler de votre système</a>
+      <a class="btn btn-clair" href="/ia-de-confiance/">Un LLM dans la boucle</a>
+    </div>
+  </div>
+</section>

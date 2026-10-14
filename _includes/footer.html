@@ -1,17 +1,30 @@
 <footer>
   <div class="wrap">
     <div>
-      <p class="marque"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></p>
+      <p class="marque-pied">{% include marque.html %}<span class="mot"><span class="g">IMG</span><span class="r">IA</span><span class="b">INFO</span></span></p>
+{% if page.lang == "en" %}
+      <p>Tailor-made platforms: image, AI, information.<br>
+      IMGIAINFO inc., {{ site.ville }}.</p>
+    </div>
+    <div>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a href="/en/what-we-do/">What we do</a> · <a href="/en/alcoa/">ALCOA++</a> · <a href="/en/sovereignty/">Sovereignty</a> · <a href="/en/questions/">Questions</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p>© IMGIAINFO inc. — All rights reserved. <a href="{{ page.alt }}">Version française</a></p>
+{% else %}
       <p>Plateformes sur mesure : image, IA, information.<br>
       IMGIAINFO inc., {{ site.ville }}.</p>
     </div>
     <div>
       <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      <p><a href="/offre/">Ce que nous faisons</a> · <a href="/alcoa/">ALCOA++</a> · <a href="/questions/">Questions</a></p>
+      <p><a href="/offre/">Ce que nous faisons</a> · <a href="/alcoa/">ALCOA++</a> · <a href="/souverainete/">Souveraineté</a> · <a href="/questions/">Questions</a></p>
     </div>
   </div>
   <div class="wrap">
-    <p>© IMGIAINFO inc. — Tous droits réservés.</p>
+    <p>© IMGIAINFO inc. — Tous droits réservés. <a href="{{ page.alt }}">English version</a></p>
+{% endif %}
   </div>
 </footer>
 <div class="bande" aria-hidden="true"><i></i><i></i><i></i></div>
